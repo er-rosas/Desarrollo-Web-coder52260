@@ -1,0 +1,30 @@
+.estiloContacto{
+    margin: 200px 0;
+    justify-content: center;
+    .estiloContacto2{
+        display: inline-block;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        .divContacto{
+            height: 800px;
+            width: 500px;
+            background-color: #ffe5bc;
+        }
+    }
+    form{
+        .formEstilo{
+            font-size: 20px;
+            background-color: #ffe5bc;
+            font-weight: bold;
+            padding: 20px 20px;
+            margin-bottom: 0;
+            width: 100%;
+        }
+    }
+}
+
+
+

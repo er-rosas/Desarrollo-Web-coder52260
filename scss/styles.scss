@@ -1,0 +1,18 @@
+@import "utilities/variables";
+@import "utilities/functions";
+@import "utilities/mixins";
+
+@import "base/typo";
+@import "base/reset";
+
+@import "components/buttons";
+
+@import "layout/header";
+@import "layout/footer";
+@import "layout/mediaqueries";
+
+@import "pages/index";
+@import "pages/nosotros";
+@import "pages/tienda";
+@import "pages/informacion";
+@import "pages/contacto.scss";

@@ -1,0 +1,24 @@
+.mainInf{
+    margin: 50px 0;
+    .infSection{
+        display: flex;
+        justify-content: center;
+        padding-right: 0;
+        padding-left: 0;
+        margin-top: 0;
+        .infText{
+            background-color: #ffe5bc;
+            width: 500px;
+            height: 500px;
+            padding: 50px;
+            font-size: 14px;
+            h2{
+                font-size: 25px;
+            }
+        }
+        .mapa{
+            width: 500px;
+            height: 500px;
+        }
+    }
+}

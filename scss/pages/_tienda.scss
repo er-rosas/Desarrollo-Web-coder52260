@@ -1,0 +1,217 @@
+.gridTienda{
+    display: grid;
+    width: 100%;
+    grid-template-rows: 100px 3fr 143px;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    gap: 50px 0px;
+    .gridHeaderTienda{
+        grid-area: header;
+    }
+    .gridMainTienda{
+        grid-area: main;
+    }
+    .gridFooterTiedna{
+        grid-area: footer;
+    }
+}
+
+.gridMainTienda{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 400px 1fr;
+    width: 100%;
+    gap: 50px 0px;
+    .titleTienda{
+        height: 400px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 1000;
+        video{
+/*             padding: 0 10px; */
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            position: absolute;
+        }
+        .opacidad{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(24, 24, 24);
+            opacity: 0.5;
+            mix-blend-mode: overlay;
+        }
+        h1{
+            position: absolute;
+            color: white;
+            font-weight: 600;
+            font-size: 30px;
+        }
+    }
+}
+.gridTiendaMenu{
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 0.25fr 1fr;
+    grid-template-rows: 0.25fr 1fr;
+    grid-template-areas:
+    "catalogo filtro"
+    "catalogo productos";
+    width: 80%;
+    margin: auto;
+    .catalogo{
+        grid-area: catalogo;
+    }
+    .filtro{
+        grid-area: filtro;
+    }
+    .productos{
+        grid-area: productos;
+    }
+
+
+
+    .catalogo{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.25fr 1fr;
+        grid-template-areas: 
+        "catalogoItem1"
+        "catalogoItem2";
+        background-color: #ffe5bc;
+        justify-items: center;
+        align-items: center;
+    }
+    .filtro{
+        display: grid;
+        grid-template-columns: 0.25fr 1fr;
+        grid-row: 1fr;
+        background-color: #ffe5bc;
+        justify-items: center;
+        align-items: center;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* .catalogo{
+        background-color: #ffe5bc;
+        height: fit-content;
+        width: 100px;
+        display: grid;
+        grid-template-rows: 75px 1fr;
+        grid-template-areas:
+        "tituloCatalogo"
+        "linksCatalogo";
+        justify-items: center;
+        align-items: center;
+        gap: 10px 0;
+        .tituloCatalogo{
+            grid-area: tituloCatalogo;
+            border-bottom: 2px solid black;
+        }
+        .linksCatalogo{
+            grid-area: linksCatalogo;
+        }
+    }
+
+    .filtro{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+    } */
+}
+/*     .estiloTienda{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    a{
+        display: flex;
+        padding: 5px 30px;
+        text-decoration: none;
+        color: black;
+    }
+} */
+/* .marginCero{
+    p{
+        margin-bottom: 0;
+    }
+}
+.estiloTienda2{
+    background-color: #ffc86f;
+}
+.productosGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: rgb(228, 228, 228);
+    width: 900px;
+    .productosTamanioEnsi{
+        height: 340px;
+        width: 250px;
+        background-color: rgb(240, 240, 240);
+        padding: 15px;
+        img{
+            object-fit: contain;
+            height: 250px;
+            width: 100%;
+            border-bottom: 2px solid rgba(0,0,0,.1);
+            padding-bottom: 15px;
+            margin-bottom: 10px;
+        }
+    }
+    .estiloProductos{
+        h2{
+            font-size: 15px;
+        }
+        p{
+            font-size: 15px;
+            color: rgb(34, 34, 34);
+        }
+    }
+} */
+
+
+.gridFooterTienda{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        background-color: rgba(255, 225, 167);
+        div{
+            list-style-type: none;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 20px 20px;
+            margin-bottom: 0;
+            a{
+                text-decoration: none;
+                color: white;
+                img{
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+}
+
+

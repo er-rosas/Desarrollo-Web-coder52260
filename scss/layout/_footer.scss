@@ -1,0 +1,23 @@
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 225, 167);
+    .footerEstilo{
+        list-style-type: none;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 20px 20px;
+        margin-bottom: 0;
+        a{
+            text-decoration: none;
+            color: white;
+            img{
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+}
+

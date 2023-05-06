@@ -1,0 +1,57 @@
+.menuTop{
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 1050;
+}
+
+.menu{
+    background-color: rgba(255, 196, 79, 0.5);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    padding: 15px 10px;
+    width: 80%;
+}
+
+.logo{
+    padding: 10px;
+    img{
+        width: 50px;
+        height: 50px;
+    }
+    a{
+        text-decoration: none;
+        font-size: 16px;
+        color: black;
+    }
+}
+
+.botonMenu{
+    margin-right: 20px;
+    .botonEstilo{
+        height: 45px;
+        width: 55px;
+        border-width: 2.5px;
+        border-style: solid;
+        border-color: #505050;
+    }
+}
+
+.menuLinks{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 16px;
+    ul{
+        background-color: rgba(255, 190, 61, 0.5);
+        margin-right: 20px;
+        border-radius: 10px;
+        li{
+            padding: 5px 15px;
+            border-radius: 10px;
+        }
+        li:hover{
+            background-color: white;
+        }
+}
+}
