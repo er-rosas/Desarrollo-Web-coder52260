@@ -1,0 +1,10 @@
+@mixin flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@mixin grillaFlex($display, $direction){
+    display: $direction;
+    flex-direction: $direction;
+}
