@@ -1,0 +1,60 @@
+@media screen and (max-width:1024px) {
+    .gridMainTienda{
+        .gridTiendaMenu{
+            width: 100%;
+        }
+    }
+}
+@media screen and (max-width:768px) {
+    .gridTienda{
+        grid-template-rows: 100px 3fr 350px;
+        .gridMainTienda{
+            .gridTiendaMenu{
+                grid-template-columns: 1fr;
+                grid-template-rows: 75px 75px 1fr;
+                grid-template-areas:
+                "catalogo"
+                "filtro"
+                "productos";
+                .catalogo{
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 1fr;
+                    grid-template-areas: 
+                    "catalogoItem1 catalogoItem1";
+                    background-color: green;
+                    .catalogoItem2{
+                        display: none;
+                    }
+                }
+                .filtro{
+                    grid-template-columns: 1fr 1fr;
+                }
+                .productosGrid{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                }
+            }
+        }
+        .gridFooterTienda{
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+    }
+}
+@media screen and (max-width:425px) {
+    .gridTienda{
+        .gridMainTienda{
+            .gridTiendaMenu{
+                grid-template-rows: 75px 90px 1fr;
+                .filtro{
+                    grid-template-columns: 1fr;
+                }
+                .productosGrid{
+                    display: grid;
+                    grid-template-columns: 1fr;
+                }
+            }
+        }
+    }
+}

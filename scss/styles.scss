@@ -9,10 +9,16 @@
 
 @import "layout/header";
 @import "layout/footer";
-@import "layout/mediaqueries";
+
 
 @import "pages/index";
 @import "pages/nosotros";
 @import "pages/tienda";
+@import "pages/productos/productos-1";
 @import "pages/informacion";
 @import "pages/contacto";
+
+
+@import "animations/animaciones";
+
+@import "responsive/mediaqueries";

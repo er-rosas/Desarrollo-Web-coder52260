@@ -1,0 +1,42 @@
+@media screen and (max-width:1024px) {
+    .sectionPRO1{
+        height: 600px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .sectionPRO1{
+            height: 1000px;
+            flex-direction: column;
+            .item1{
+                height: 500px;
+                width: 100%;
+            }
+            .item2{
+                height: 500px;
+                width: 100%;
+                justify-content: center;
+            }
+        }
+}
+@media screen and (max-width:426px) {
+    .sectionPRO1{
+        height: 1100px;
+        .item1{
+            height: 350px;
+            padding: 20px;
+        }
+        .item2{
+            height: 750px;
+        }
+    }
+}
+@media screen and (max-width:320px) {
+    .sectionPRO1{
+        .item2{
+            h1{
+                font-size: 20px;
+            }
+        }
+    }
+}

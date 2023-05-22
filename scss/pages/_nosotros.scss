@@ -1,13 +1,11 @@
 .gridNosotros{
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 100px 3fr 143px;
+    grid-template-rows: 100px 1fr 143px;
     grid-template-areas: 
     "header"
     "main"
     "footer";
     gap: 50px 0px;
-
     .gridHeaderNosotros{
         grid-area: header;
     }
@@ -18,24 +16,18 @@
         grid-area: footer;
     }
 }
-
 .gridMainNosotros{
     display: grid;
     grid-template-rows: 400px 1fr 1fr;
-    gap: 50px 0px;
-    section{
-        background-color: rgb(255, 205, 125);
-    }
+    gap: 100px 0px;
     .titleNosotros{
         height: 400px;
         width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: grid;
+        align-items: end;
         position: relative;
         z-index: 1000;
         video{
-            padding: 10px;
             height: 100%;
             width: 100%;
             object-fit: cover;
@@ -49,43 +41,29 @@
             opacity: 0.5;
             mix-blend-mode: overlay;
         }
-        h1{
+        div{
             position: absolute;
-            color: white;
-            font-weight: 600;
-            font-size: 30px;
+            padding-left: 10%;
+            h1{
+                color: white;
+                font-weight: 600;
+                font-size: 40px;
+            }
+            p{
+                color: white;
+                font-size: 20px;
+            }
         }
     }
 }
 .gridEquipo{
-    height: 500px;
-    width: 100%;
-    padding: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-    "objeto1 objeto2 objeto3 objeto4";
-    gap: 10px 10px;
-    justify-items: center;
-    .objeto1{
-        grid-area: objeto1;
-    }
-    .objeto2{
-        grid-area: objeto2;
-    }
-    .objeto3{
-        grid-area: objeto3;
-    }
-    .objeto4{
-        grid-area: objeto4;
-    }
-    
     div{
-        height: 100%;
+        height: 500px;
         width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        display: grid;
+        justify-items: center;
         align-items: center;
         position: relative;
         z-index: 1000;
@@ -95,36 +73,48 @@
             width: 100%;
             object-fit: cover;
         }
-    }
-    div:hover{
-        .opaco2{
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background-color: rgb(24, 24, 24);
-            opacity: 0.5;
-            transition: 1s;
+        .igBlanco{
+            display: none;
+                img{
+                        width: 40px;
+                        height: 40px;
+                }
         }
-        p{
-            position: absolute;
-            color: white;
-            font-size: 20px;
-            z-index: 1001;
-            width: 80%;
-            font-weight: bold;
+        &:hover{
+            .opaco2{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: rgb(24, 24, 24);
+                opacity: 0.5;
+                transition: 1s;
+            }
+            p{
+                position: absolute;
+                color: white;
+                font-size: 20px;
+                z-index: 1001;
+                font-weight: bold;
+            }
+            .igBlanco{
+                display: grid;
+                justify-items: center;
+                margin-top: 20px;
+                position: absolute;
+                z-index: 1001;
+            }
         }
     }
 }
-
 .gridActividad{
-    height: 500px;
+    height: 100%;
     width: 100%;
+    background-color: map-get($coloresPricipales, nro3);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    "vidAct textAct";
     .vidAct{
-        grid-area: vidAct;
+        height: 500px;
+        width: 100%;
         video{
             width: 100%;
             height: 100%;
@@ -132,21 +122,45 @@
         }
     }
     .textAct{
-        grid-area: textAct;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        height: 500px;
+        display: grid;
+        justify-items: center;
         align-items: center;
+        div{
+            width: 80%;
+        }
         .titAct{
             font-weight: bold;
             font-size: 25px;
         }
         p{
-            width: 80%;
             font-size: 15px;
+        }
+        span{
+            font-weight: bold;
         }
     }
 }
-
-
-
+.gridFooterNosotros{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: map-get($coloresPricipales, nro2);
+    align-items: center;
+    justify-items: center;
+    div{
+        list-style-type: none;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 20px 20px;
+        margin-bottom: 0;
+        a{
+            text-decoration: none;
+            color: white;
+            img{
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+}

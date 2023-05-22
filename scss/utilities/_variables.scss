@@ -1,26 +1,17 @@
 $coloresPricipales: (
-    nro1: black,
-    nro2: black,
-    nro3: black,
+    nro1: rgba(255, 190, 61, 0.5),
+    nro2: rgba(255, 225, 167),
+    nro3: #ffe5bc,
 );
 $coloresSecundarios: (
-    nro1: black,
+    nro1: #fff1d6, /* tienda - catalogo filtro */
     nro2: black,
     nro3: black,
 );
-/* map-get */
-$colorPrincipal1: rgba(255, 196, 79, 0.5);
-$colorPrincipal2: black;
-$colorPrincipal3: black;
-
-$colorSecundario1: black;
-$colorSecundario2: black;
-$colorSecundario3: black;
-
 
 $fontPrincipal: 'Roboto', Arial, Helvetica, sans-serif;
 $fontSecundaria: 'Roboto', Arial, Helvetica, sans-serif;
 
-$fontSizeLaptop: 25px;
-$fontSizeTablet: 20px;
-$fontSizeMobile: 15px;
+$fontSize: (
+    nro1: 15px,
+);

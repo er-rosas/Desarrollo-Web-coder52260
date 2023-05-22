@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda</title>
-    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/layout/favicon.ico" type="image/x-icon">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
@@ -25,7 +25,7 @@
             <nav class="navbar navbar-expand-lg menu container-fluid">
                     <div class="logo">
                         <a class="navbar-brand" href="../index.html">
-                            <img src="../images/logo512x512.png" alt="logoVETDOG512x512" title="logoVETDOG512x512">
+                            <img src="../images/layout/logo512x512.png" alt="logoVETDOG512x512" title="logoVETDOG512x512">
                         </a>
                         <a class="navbar-brand" href="../index.html">GOLDENDOG</a>
                     </div>
@@ -59,174 +59,242 @@
             <section class="titleTienda">
                 <video muted autoplay loop src="../videos/goldenvideo-3.mp4"></video>
                 <div class="opacidad"></div>
-                <h1>
-                    NUESTRA TIENDA
-                </h1>
+                <div>
+                    <h1>
+                        NUESTRA TIENDA
+                    </h1>
+                    <p>
+                        Lo mejor para nuestras mascotas
+                    </p>
+                </div>
             </section>
             <div class="gridTiendaMenu">
                 <div class="catalogo">
                     <div class="catalogoItem1">
-                        <p>
-                            Catalogo
-                        </p>
+                        <div class="subtituloEstilo">
+                            <div>
+                                CATALOGO
+                            </div>
+                        </div>
                     </div>
                     <div class="catalogoItem2">
-                        <p>Alimentos para perros</p>
+                        <ul>
+                            <li>Alimento</li>
+                            <li>Juguetes</li>
+                            <li>Camas</li>
+                            <li>Accesorios</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="filtro">
-                    <p>
-                        Filtro:
-                    </p>
-                    <p>
-                        Alimentos para perros
-                    </p>
+                <div class="filtro estiloTienda">
+                    <div class="subtituloEstilo">
+                        <div>
+                            Alimento para perros
+                        </div>
+                    </div>
+                    <div class="subtituloEstilo filtroSelect">
+                        <div>
+                            FILTRO:
+                        </div>
+                        <select name="" id="">
+                            <option value="">Recomendados</option>
+                            <option value="">Recientes</option>
+                            <option value="">Categoría</option>
+                            <option value="">Menor precio</option>
+                            <option value="">Mayor precio</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="productos">
-                    <p>
-                        a
-                    </p>
-                </div>
-                <!-- <div class="catalogo estiloTienda marginCero">
-                        <p class="tituloCatalogo">
-                            Catalogo
+                <div class="productos productosGrid">
+                    <div class="productosEstilo">
+                        <a href="../pages/productos/producto-1.html">
+                            <img src="../images/tienda/pro1.webp" alt="">
+                            <h2>
+                                Alimento Pedigree Óptima Digestión
+                            </h2>
+                        </a>
+                        <p>
+                            US$ 50
                         </p>
-                    <div class="linksCatalogo estiloTienda">
-                        <a href="">
-                            <p>Alimentos para perros</p>
-                        </a>
-                        <a href="">
-                            <p>
-                                Juguetes para perros
-                            </p>
-                        </a>
-                        <a href="">
-                            <p>
-                                Camas para perros
-                            </p>
-                        </a>
-                        <a href="">
-                            <p>
-                                Accesorios para perros
-                            </p>
-                        </a>
+                    </div>
+                    <div class="productosEstilo">
+                        <img src="../images/tienda/pro2.webp" alt="">
+                        <h2>
+                            Alimento Pro Plan OptiHealth Pro Plan
+                        </h2>
+                        <p>
+                            US$ 42.75
+                        </p>
+                    </div>
+                    <div class="productosEstilo">
+                        <img src="../images/tienda/pro3.webp" alt="">
+                        <h2>
+                            Alimento Astro Selection
+                        </h2>
+                        <p>
+                            US$ 67.20
+                        </p>
+                    </div>
+                    <div class="productosEstilo">
+                        <img src="../images/tienda/pro4.webp" alt="">
+                        <h2>
+                            Alimento Max Professional 
+                        </h2>
+                        <p>
+                            US$ 23.90
+                        </p>
+                    </div>
+                    <div class="productosEstilo">
+                        <img src="../images/tienda/pro5.webp" alt="">
+                        <h2>
+                            Alimento Dogui Recetas Caseras
+                        </h2>
+                        <p>
+                            US$ 50.15
+                        </p>
+                    </div>
+                    <div class="productosEstilo">
+                        <img src="../images/tienda/pro6.webp" alt="">
+                        <h2>
+                            Alimento Lager Premium Lager
+                        </h2>
+                        <p>
+                            US$ 29.80
+                        </p>
+                    </div>
+                    <div class="productosEstilo">
+                        <img src="../images/tienda/pro7.webp" alt="">
+                        <h2>
+                            Alimento Wits Perro Adulto
+                        </h2>
+                        <p>
+                            US$ 65.10
+                        </p>
+                    </div>
+                    <div class="productosEstilo">
+                        <img src="../images/tienda/pro8.webp" alt="">
+                        <h2>
+                            Alimento Virbac Veterinary HPM
+                        </h2>
+                        <p>
+                            US$ 21.45
+                        </p>
+                    </div>
+                    <div class="productosEstilo">
+                        <img src="../images/tienda/pro9.webp" alt="">
+                        <h2>
+                            Ración Comida Equilibrio Adultos
+                        </h2>
+                        <p>
+                            US$ 59.30
+                        </p>
+                    </div>
+                    <div class="productosEstilo">
+                        <img src="../images/tienda/pro10.webp" alt="">
+                        <h2>
+                            Alimento Pro Plan OptiHealth Pro Plan
+                        </h2>
+                        <p>
+                            US$ 27.60
+                        </p>
+                    </div>
+                    <div class="productosEstilo">
+                        <img src="../images/tienda/pro11.webp" alt="">
+                        <h2>
+                            Alimento Primoção Original
+                        </h2>
+                        <p>
+                            US$ 44.90
+                        </p>
+                    </div>
+                    <div class="productosEstilo">
+                        <img src="../images/tienda/pro12.webp" alt="">
+                        <h2>
+                            Alimento Equilíbrio Active
+                        </h2>
+                        <p>
+                            US$ 63.25
+                        </p>
+                    </div>
+                    <div class="productosEstilo">
+                        <img src="../images/tienda/pro13.webp" alt="">
+                        <h2>
+                            Ración Comida Maxine Adulto
+                        </h2>
+                        <p>
+                            US$ 22.70
+                        </p>
+                    </div>
+                    <div class="productosEstilo">
+                        <img src="../images/tienda/pro14.webp" alt="">
+                        <h2>
+                            Alimento Primoção Premium Original
+                        </h2>
+                        <p>
+                            US$ 54.80
+                        </p>
+                    </div>
+                    <div class="productosEstilo">
+                        <img src="../images/tienda/pro15.webp" alt="">
+                        <h2>
+                            Racion Comida Toky Perro Adulto
+                        </h2>
+                        <p>
+                            US$ 31.15
+                        </p>
+                    </div>
+                    <div class="productosEstilo">
+                        <img src="../images/tienda/pro16.webp" alt="">
+                        <h2>
+                            Alimento Equilíbrio Raças Pequenas
+                        </h2>
+                        <p>
+                            US$ 47.40
+                        </p>
+                    </div>
+                    <div class="productosEstilo">
+                        <img src="../images/tienda/pro17.webp" alt="">
+                        <h2>
+                            Alimento Max Premium Especial
+                        </h2>
+                        <p>
+                            US$ 24.05
+                        </p>
+                    </div>
+                    <div class="productosEstilo">
+                        <img src="../images/tienda/pro18.webp" alt="">
+                        <h2>
+                            Alimento Nutrapet Natural Dog Premium
+                        </h2>
+                        <p>
+                            US$ 70.00
+                        </p>
+                    </div>
+                    <div class="productosEstilo">
+                        <img src="../images/tienda/pro19.webp" alt="">
+                        <h2>
+                            Alimento Lager Premium Lager
+                        </h2>
+                        <p>
+                            US$ 37.90
+                        </p>
+                    </div>
+                    <div class="productosEstilo">
+                        <img src="../images/tienda/pro20.webp" alt="">
+                        <h2>
+                            Alimento Vitalcan Balanced Exclusive
+                        </h2>
+                        <p>
+                            US$ 66.50
+                        </p>
                     </div>
                 </div>
-                <div class="filtro estiloTienda estiloTienda2 marginCero">
-                    <p>
-                        Filtro:
-                    </p>
-                    <p>
-                        Alimentos para perros
-                    </p>
-                </div>
-                <div class="productos productosGrid estiloProductos">
-                        <div class="productosTamanioEnsi">
-                            <img src="../images/producto1-275x477.png" alt="">
-                            <h2>
-                                Alimento Royal Canin Breed Health
-                            </h2>
-                            <p>
-                                US$50
-                            </p>
-                        </div>
-                        <div class="productosTamanioEnsi">
-                            <img src="../images/producto1-275x477.png" alt="">
-                            <h2>
-                                Alimento Royal Canin Breed Health
-                            </h2>
-                            <p>
-                                US$50
-                            </p>
-                        </div>
-                        <div class="productosTamanioEnsi">
-                            <img src="../images/producto1-275x477.png" alt="">
-                            <h2>
-                                Alimento Royal Canin Breed Health
-                            </h2>
-                            <p>
-                                US$50
-                            </p>
-                        </div>
-                        <div class="productosTamanioEnsi">
-                            <img src="../images/producto1-275x477.png" alt="">
-                            <h2>
-                                Alimento Royal Canin Breed Health
-                            </h2>
-                            <p>
-                                US$50
-                            </p>
-                        </div>
-                        <div class="productosTamanioEnsi">
-                            <img src="../images/producto1-275x477.png" alt="">
-                            <h2>
-                                Alimento Royal Canin Breed Health
-                            </h2>
-                            <p>
-                                US$50
-                            </p>
-                        </div>
-                        <div class="productosTamanioEnsi">
-                            <img src="../images/producto1-275x477.png" alt="">
-                            <h2>
-                                Alimento Royal Canin Breed Health
-                            </h2>
-                            <p>
-                                US$50
-                            </p>
-                        </div>
-                        <div class="productosTamanioEnsi">
-                            <img src="../images/producto1-275x477.png" alt="">
-                            <h2>
-                                Alimento Royal Canin Breed Health
-                            </h2>
-                            <p>
-                                US$50
-                            </p>
-                        </div>
-                        <div class="productosTamanioEnsi">
-                            <img src="../images/producto1-275x477.png" alt="">
-                            <h2>
-                                Alimento Royal Canin Breed Health
-                            </h2>
-                            <p>
-                                US$50
-                            </p>
-                        </div>
-                        <div class="productosTamanioEnsi">
-                            <img src="../images/producto1-275x477.png" alt="">
-                            <h2>
-                                Alimento Royal Canin Breed Health
-                            </h2>
-                            <p>
-                                US$50
-                            </p>
-                        </div>
-                        <div class="productosTamanioEnsi">
-                            <img src="../images/producto1-275x477.png" alt="">
-                            <h2>
-                                Alimento Royal Canin Breed Health
-                            </h2>
-                            <p>
-                                US$50
-                            </p>
-                        </div>
-                        <div class="productosTamanioEnsi">
-                            <img src="../images/producto1-275x477.png" alt="">
-                            <h2>
-                                Alimento Royal Canin Breed Health
-                            </h2>
-                            <p>
-                                US$50
-                            </p>
-                        </div>
-                </div> -->
             </div>
         </main>
         <footer class="gridFooterTienda">
             <div class="logoFooter">
                 <a href="../index.html">
-                    <img src="../images/logo512x512.png" alt="logoVETDOG512x512" title="logoVETDOG512x512">
+                    <img src="../images/layout/logo512x512.png" alt="logoVETDOG512x512" title="logoVETDOG512x512">
                 </a>
                 <a href="../index.html">GOLDENDOG</a>
             </div>
@@ -237,19 +305,19 @@
             <div class="redesFooter">
                 <h5>Redes sociales</h5>
                 <a href="https://www.facebook.com/">
-                    <img src="../images/facebook.png" alt="facebook">
+                    <img src="../images/layout/facebook.png" alt="facebook">
                 </a>
                 <a href="https://twitter.com/">
-                    <img src="../images/twitter.png" alt="twitter">
+                    <img src="../images/layout/twitter.png" alt="twitter">
                 </a>
                 <a href="https://www.instagram.com/">
-                    <img src="../images/instagram.png" alt="instagram">
+                    <img src="../images/layout/instagram.png" alt="instagram">
                 </a>
                 <a href="https://www.whatsapp.com/">
-                    <img src="../images/whatsapp.png" alt="whatsapp">
+                    <img src="../images/layout/whatsapp.png" alt="whatsapp">
                 </a>
                 <a href="https://www.youtube.com/">
-                    <img src="../images/youtube.png" alt="youtube">
+                    <img src="../images/layout/youtube.png" alt="youtube">
                 </a>
             </div>
         </footer>

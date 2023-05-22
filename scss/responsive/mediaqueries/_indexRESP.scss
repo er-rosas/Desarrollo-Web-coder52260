@@ -1,0 +1,50 @@
+@media screen and (max-width:1024px) {
+    main{
+        .caracteristicas{
+            height: 950px;
+        }
+    }
+}
+@media screen and (max-width:768px) {
+    main{
+        .presentacion{
+            height: 1000px;
+            flex-direction: column;
+            .item1{
+                width: 100%;
+            }
+            .item2{
+                width: 100%;
+            }
+        }
+        .dogTypes{
+            height: 1500px;
+            flex-direction: column;
+            div{
+                width: 100%;
+            }
+        }
+        .caracteristicas{
+            height: auto;
+            flex-direction: column;
+            .item3{
+                width: 100%;
+                height: 600px;
+            }
+            .item4{
+                width: 100%;
+                height: 50%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:424px) {
+    main{
+        .presentacion{
+            .item1{
+                padding: 30px 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+@media screen and (max-width:768px) {
+    .gridNosotros{
+        grid-template-rows: 100px 3fr 350px;
+        .gridMainNosotros{
+            .gridEquipo{
+                grid-template-columns: 1fr 1fr;
+            }
+            .gridActividad{
+                grid-template-columns: 1fr;
+            }
+        }
+        .gridFooterNosotros{
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+    }
+}
+@media screen and (max-width:425px) {
+    .gridNosotros{
+        .gridMainNosotros{
+            grid-template-rows: 400px 1fr auto;
+            .gridEquipo{
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}

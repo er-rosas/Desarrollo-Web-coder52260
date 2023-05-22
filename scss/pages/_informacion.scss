@@ -1,24 +1,46 @@
+.container-fluid{
+    --bs-gutter-x: 0;
+    .row{
+        margin-right: unset;
+        margin-left: unset;
+        padding-right: unset;
+        padding-left: unset;
+    }
+}
 .mainInf{
     margin: 50px 0;
     .infSection{
         display: flex;
         justify-content: center;
-        padding-right: 0;
-        padding-left: 0;
-        margin-top: 0;
+        height: 500px;
+        width: 100%;
+        background-color: map-get($coloresPricipales, nro3);
         .infText{
-            background-color: #ffe5bc;
-            width: 500px;
-            height: 500px;
+            width: 50%;
+            height: 100%;
             padding: 50px;
-            font-size: 14px;
+            font-size: 15px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
             h2{
-                font-size: 25px;
+                font-size: 30px;
+            }
+            span{
+                font-weight: bold;
             }
         }
         .mapa{
-            width: 500px;
-            height: 500px;
+            position: relative;
+            width: 50%;
+            height: 100%;
+            iframe{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+            }
         }
     }
 }

@@ -1,0 +1,25 @@
+@media screen and (max-width:992px) {
+    .navbar{
+        width: 100%;
+    }
+    .menuLinks{
+        ul{
+            background-color: unset;
+            width: 100%;
+            li{
+                background-color: rgba(255, 190, 61, 0.5);
+                margin: 5px;
+
+            }
+        }
+    }
+}
+@media screen and (max-width:992px) {
+    .footer{
+        height: auto;
+        flex-direction: column;
+        div{
+            width: fit-content;
+        }
+    }
+}
