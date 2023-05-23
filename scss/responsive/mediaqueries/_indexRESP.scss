@@ -20,7 +20,7 @@
         .dogTypes{
             height: 1500px;
             flex-direction: column;
-            div{
+            .perrosEstilos{
                 width: 100%;
             }
         }
@@ -38,7 +38,6 @@
         }
     }
 }
-
 @media screen and (max-width:424px) {
     main{
         .presentacion{

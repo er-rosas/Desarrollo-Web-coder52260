@@ -172,6 +172,12 @@
             color: rgb(34, 34, 34);
         }
     }
+    .producto1{
+        transition: 2s;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
 }
 .gridFooterTienda{
     display: grid;

@@ -55,8 +55,6 @@ body {
 }
 
 .menuLinks {
-  display: flex;
-  justify-content: flex-end;
   font-size: 16px;
 }
 .menuLinks ul {
@@ -67,9 +65,11 @@ body {
 .menuLinks ul li {
   padding: 5px 15px;
   border-radius: 10px;
+  transition: 1s;
 }
 .menuLinks ul li:hover {
   background-color: white;
+  animation-name: colorWhite;
 }
 
 .footer {
@@ -180,7 +180,7 @@ body {
   align-items: center;
   background-color: #bdbdbd;
 }
-.dogTypes div {
+.dogTypes .perrosEstilos {
   height: 100%;
   width: 33.33%;
   display: flex;
@@ -189,29 +189,37 @@ body {
   position: relative;
   z-index: 1000;
 }
-.dogTypes div img {
+.dogTypes .perrosEstilos img {
   position: absolute;
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
-.dogTypes div:hover .opaco {
+.dogTypes .perrosEstilos p {
+  color: white;
+  font-size: 20px;
+  width: 80%;
+  transition: 1s;
+  position: absolute;
+  scale: 0;
+  z-index: 1001;
+  transition: 1s;
+}
+.dogTypes .perrosEstilos p span {
+  font-weight: bold;
+}
+.dogTypes .perrosEstilos .opaco {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgb(24, 24, 24);
-  opacity: 0.8;
   transition: 1s;
 }
-.dogTypes div:hover p {
-  position: absolute;
-  color: white;
-  font-size: 20px;
-  z-index: 1001;
-  width: 80%;
+.dogTypes .perrosEstilos:hover .opaco {
+  background-color: rgba(0, 0, 0, 0.8);
+  animation-name: opacidadDogtypes;
 }
-.dogTypes div:hover p span {
-  font-weight: bold;
+.dogTypes .perrosEstilos:hover p {
+  scale: 1;
 }
 
 .caracteristicas {
@@ -231,6 +239,7 @@ body {
   height: 0px;
   flex-grow: 1;
   object-fit: cover;
+  transition: 1s;
 }
 .caracteristicas .item3 img:hover {
   height: 50%;
@@ -340,13 +349,15 @@ body {
   width: 40px;
   height: 40px;
 }
-.gridEquipo div:hover .opaco2 {
+.gridEquipo div .opaco2 {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgb(24, 24, 24);
-  opacity: 0.5;
   transition: 1s;
+}
+.gridEquipo div:hover .opaco2 {
+  background-color: rgba(24, 24, 24, 0.5);
+  animation-name: vetOpaco2;
 }
 .gridEquipo div:hover p {
   position: absolute;
@@ -594,6 +605,12 @@ body {
   font-size: 15px;
   color: rgb(34, 34, 34);
 }
+.productosGrid .producto1 {
+  transition: 2s;
+}
+.productosGrid .producto1:hover {
+  transform: scale(1.1);
+}
 
 .gridFooterTienda {
   display: grid;
@@ -753,12 +770,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
 }
 .estiloContacto .estiloFormulario form {
   padding: 25px 30px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   text-align: center;
+  height: 670px;
   width: 340px;
   background-color: #ffe5bc;
 }
@@ -771,6 +790,10 @@ body {
   display: flex;
   flex-direction: column;
   text-align: left;
+}
+.estiloContacto .estiloFormulario form fieldset p {
+  font-size: 15px;
+  font-weight: 500;
 }
 .estiloContacto .estiloFormulario form fieldset label {
   color: #283629;
@@ -806,10 +829,78 @@ body {
   background-color: #d4983f;
   box-shadow: 0 0 20px rgba(254, 162, 0, 0.4);
 }
+.estiloContacto .estiloTelefono {
+  padding: 40px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  height: 670px;
+  width: 340px;
+  background-color: #ffe5bc;
+}
+.estiloContacto .estiloTelefono div {
+  margin-bottom: 10px;
+}
+.estiloContacto .estiloTelefono div img {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+.estiloContacto .estiloTelefono div p {
+  font-size: 15px;
+}
+.estiloContacto .estiloTelefono div p span {
+  font-weight: 500;
+}
+.estiloContacto .estiloTelefono div a {
+  text-decoration: none;
+  font-size: 15px;
+}
+.estiloContacto .estiloTelefono .abc {
+  display: flex;
+}
+.estiloContacto .estiloTelefono .gif {
+  width: 100%;
+  margin: 25px 0;
+  object-fit: cover;
+  transform: rotateY(180deg);
+}
 
+/* header */
+@keyframes colorWhite {
+  0% {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  50% {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    background-color: rgb(255, 255, 255);
+  }
+}
+/* index */
+@keyframes opacidadDogtypes {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+/* nosotros */
+@keyframes vetOpaco2 {
+  0% {
+    background-color: rgba(24, 24, 24, 0);
+  }
+  100% {
+    background-color: rgba(24, 24, 24, 0.5);
+  }
+}
 @media screen and (max-width: 992px) {
   .navbar {
     width: 100%;
+  }
+  .menuLinks {
+    justify-content: unset;
   }
   .menuLinks ul {
     background-color: unset;
@@ -818,6 +909,12 @@ body {
   .menuLinks ul li {
     background-color: rgba(255, 190, 61, 0.5);
     margin: 5px;
+  }
+}
+@media screen and (min-width: 993px) {
+  .menuLinks {
+    display: flex;
+    justify-content: flex-end;
   }
 }
 @media screen and (max-width: 992px) {
@@ -849,7 +946,7 @@ body {
     height: 1500px;
     flex-direction: column;
   }
-  main .dogTypes div {
+  main .dogTypes .perrosEstilos {
     width: 100%;
   }
   main .caracteristicas {

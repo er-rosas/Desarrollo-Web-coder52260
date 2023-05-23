@@ -4,7 +4,6 @@
     top: 0;
     z-index: 1050;
 }
-
 .menu{
     background-color: map-get($coloresPricipales, nro1);
     border-bottom-left-radius: 1rem;
@@ -13,7 +12,6 @@
     padding: 15px 10px;
     width: 80%;
 }
-
 .logo{
     padding: 10px;
     img{
@@ -27,7 +25,6 @@
         color: black;
     }
 }
-
 .botonMenu{
     margin-right: 20px;
     .botonEstilo{
@@ -38,10 +35,7 @@
         border-color: #505050;
     }
 }
-
 .menuLinks{
-    display: flex;
-    justify-content: flex-end;
     font-size: 16px;
     ul{
         background-color: map-get($coloresPricipales, nro1);
@@ -50,8 +44,10 @@
         li{
             padding: 5px 15px;
             border-radius: 10px;
+            transition: 1s;
             &:hover{
                 background-color: white;
+                animation-name: colorWhite;
             }
         }
     }

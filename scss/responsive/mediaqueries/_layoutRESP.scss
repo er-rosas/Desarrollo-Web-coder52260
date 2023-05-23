@@ -3,6 +3,7 @@
         width: 100%;
     }
     .menuLinks{
+        justify-content: unset;
         ul{
             background-color: unset;
             width: 100%;
@@ -12,6 +13,12 @@
 
             }
         }
+    }
+}
+@media screen and (min-width:993px) {
+    .menuLinks{
+        display: flex;
+        justify-content: flex-end;
     }
 }
 @media screen and (max-width:992px) {
